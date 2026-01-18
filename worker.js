@@ -1,19 +1,19 @@
 // ---------- Insert Your Data ---------- //
 
-const BOT_TOKEN = "BOT_TOKEN"; // Insert your bot token.
-const BOT_WEBHOOK = "/endpoint"; // Let it be as it is.
-const BOT_SECRET = "BOT_SECRET"; // Insert a powerful secret text (only [A-Z, a-z, 0-9, _, -] are allowed).
-const BOT_OWNER = 123456789; // Insert your telegram account id.
-const BOT_CHANNEL = -100123456789; // Insert your telegram channel id which the bot is admin in.
-const SIA_SECRET = "SIA_SECRET"; // Insert a powerful secret text and keep it safe.
-const PUBLIC_BOT = false; // Make your bot public (only [true, false] are allowed).
+const BOT_TOKEN = "8339335336:AAHT9tQU8_EgNvERBdta1xsNMPIzDvfZ4oU";
+const BOT_WEBHOOK = "/registerwebhook";
+const BOT_SECRET = "@Nobita_Filestore_Bot";
+const BOT_OWNER = 7484783061;
+const BOT_CHANNEL = -1003016384538;
+const SIA_SECRET = "Kuch Na Hain";
+const PUBLIC_BOT = true;
 
 // ---------- Do Not Modify ---------- // 
 
 const WHITE_METHODS = ["GET", "POST", "HEAD"];
 const HEADERS_FILE = {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS", "Access-Control-Allow-Headers": "Content-Type"};
 const HEADERS_ERRR = {'Access-Control-Allow-Origin': '*', 'content-type': 'application/json'};
-const ERROR_404 = {"ok":false,"error_code":404,"description":"Bad Request: missing /?file= parameter", "credit": "https://github.com/providerbotz/filestreamerfree"};
+const ERROR_404 = {"ok":false,"error_code":404,"description":"Bad Request: missing /?file= parameter", "credit": "https://github.com/vauth/filestream-cf"};
 const ERROR_405 = {"ok":false,"error_code":405,"description":"Bad Request: method not allowed"};
 const ERROR_406 = {"ok":false,"error_code":406,"description":"Bad Request: file type invalid"};
 const ERROR_407 = {"ok":false,"error_code":407,"description":"Bad Request: file hash invalid by atob"};
@@ -434,4 +434,4 @@ async function onMessage(event, message) {
 
   let final_text = `*🗂 File Name:* \`${fName}\`\n*⚙️ File Hash:* \`${final_hash}\``
   return Bot.sendMessage(message.chat.id, message.message_id, final_text, buttons)
-      }
+            }
